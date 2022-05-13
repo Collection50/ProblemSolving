@@ -9,7 +9,7 @@ want: 정수 배열이 주어졌을 때, 숫자 0을 배열의 끝부분에 위�
 단, 배열 자체가 수정되어야 한다
 
 
-## Understanding & Seperating`
+## Understanding & Seperating
 1. 0을 만나면 splice
 2. splice 실행될 때마다 count++
 3. count 수만큼 0 push
