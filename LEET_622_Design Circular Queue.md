@@ -8,12 +8,12 @@
 ## Understanding & Seperating
 1. `k`개의 배열 선언, `undefined`로 초기화
 2. index 의미하는 `front`, `rear`와 크기를 의미하는 `queueSize`, `maxSize` 선언 및 초기화
-3. `enQueue(value): ` 큐에 값을 집어넣고, 성공했다면 `true` 반환(아니면 `false`)  
-4. `deQueue(): ` 큐의 값을 삭제하고, 성공했다면 `true` 반환(아니면 `false`)  
-5. `Front(): ` 큐의 맨 앞에 있는 데이터 출력, 큐가 비었다면 `-1` 출력  
-6. `Rear(): ` 큐의 맨 끝에 있는 데이터 출력, 큐가 비었다면 `-1` 출력  
-7. `isEmpty(): ` 큐가 비었는지 확인(불리언)  
-8. `isFull(): ` 큐가 꽉찼는지 확인(불리언)  
+3. `enQueue(value):` 큐에 값을 집어넣고, 성공했다면 `true` 반환(아니면 `false`)  
+4. `deQueue():` 큐의 값을 삭제하고, 성공했다면 `true` 반환(아니면 `false`)  
+5. `Front():` 큐의 맨 앞에 있는 데이터 출력, 큐가 비었다면 `-1` 출력  
+6. `Rear():` 큐의 맨 끝에 있는 데이터 출력, 큐가 비었다면 `-1` 출력  
+7. `isEmpty():` 큐가 비었는지 확인(boolean)  
+8. `isFull():` 큐가 꽉찼는지 확인(boolean)  
 
 ### solve 1
 문제를 머릿속에서 그릴 때 `isEmpty()`, `isFull()`을 구현하는 것이 생각보다 복잡하게 구상하고 있어서 생각보다 오랜 시간이 걸렸다  
