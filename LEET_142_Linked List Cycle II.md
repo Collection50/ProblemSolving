@@ -24,7 +24,7 @@ Linked List의 Cycle(순환) 여부를 확인할 수 있는 **토끼와 거북�
 ### solve 2
 Cycle 여부를 확인하는 `hasCycle()` 내부 함수를 만들어 해결 
 
-### solve 1
+### solve 1 Code
 ```js
 // Runtime: 90 ms, faster than 80.13%
 // Memory Usage: 44.5 MB, 91.70%
@@ -49,7 +49,7 @@ const detectCycle = function (head) {
 };
 ```
 
-### solve 2
+### solve 2 Code
 ```js
 // Runtime: 85 ms, faster than 87.06%
 // Memory Usage: 44.8 MB, 78.56%

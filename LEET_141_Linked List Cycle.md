@@ -12,8 +12,9 @@ Linked List의 순환 여부를 확인하라
 
 ### solve 1
 Linked List의 Cycle(순환) 여부를 확인할 수 있는 **토끼와 거북이 알고리즘**을 새로 배우며 문제 해결  
+(알고리즘에 대한 설명은 위 링크 참조)
 
-### solve 1
+### solve 1 Code
 ```js
 // Runtime: 123 ms, faster than 26.23%
 // Memory Usage: 45.4 MB, smaller than 28.95%
