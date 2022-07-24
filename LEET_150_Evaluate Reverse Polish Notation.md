@@ -10,7 +10,7 @@
 
 ## INPUT && OUTPUT
 
-INPUT: ARRAY
+INPUT: ARRAY  
 OUTPUT: NUMBER
 
 ## First Understanding & Seperating
