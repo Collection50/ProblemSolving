@@ -56,9 +56,7 @@ const findJudge = function (n, trust) {
   let judge = -1;
 
   trust.forEach(([truster, trustee]) => {
-    if (!trustObj[trustee]) {
-      trustObj[trustee] = new Set();
-    }
+    trustObj[trustee] = trustObj[trustee] || new Set();
     trustObj[trustee].add(truster);
   });
 
