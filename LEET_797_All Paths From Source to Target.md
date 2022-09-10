@@ -74,3 +74,5 @@ const allPathsSourceTarget = function (graph) {
 
 자바스크립트가 정말 재밌는 점은 **언어에 대한 이해도가 높아지면 높아질수록**  
 재밌는 코드들을 다양하게 작성할 수 있다는 점이다
+
+[Discuss in Leetcode](https://leetcode.com/problems/all-paths-from-source-to-target/discuss/2556536/Javascript-Easiest-Solve)
