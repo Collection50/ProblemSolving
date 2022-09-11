@@ -35,6 +35,8 @@
 ### solve 1 Code
 
 ```js
+// Runtime: 326 ms, faster than 36.36%
+// Memory Usage: 72.1 MB, less than 82.95%
 const findSmallestSetOfVertices = function (n, edges) {
   const paths = new Array(n).fill(0);
   const result = [];
