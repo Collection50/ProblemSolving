@@ -3,4 +3,5 @@ node_modules/
 .eslintrc.json
 package.json
 package-lock.json
-000_template.md
+000_LEET_template.md
+000_PR_template.md
