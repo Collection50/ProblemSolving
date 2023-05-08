@@ -123,10 +123,7 @@ function solution(n, k) {
 
 ```js
 function solution(n, k) {
-  return n
-    .toString(k)
-    .split('0')
-    .filter((number) => isPrime).length;
+  return n.toString(k).split('0').filter(isPrime).length;
 }
 ```
 
