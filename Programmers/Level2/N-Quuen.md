@@ -38,20 +38,20 @@
 ### solve 1 Code
 
 ```js
-const solution = (n) => {
+function solution(n) {
   const row = Array.from({ length: n }, () => 0);
   let count = 0;
 
-  function isSafe(r, c) {
+  const isSafe = (r, c) => {
     for (let i = 0; i < r; i++) {
       if (c === row[i] || Math.abs(c - row[i]) === r - i) {
         return false;
       }
     }
     return true;
-  }
+  };
 
-  function dfs(r) {
+  const dfs = (r) => {
     if (r === n) {
       count++;
       return;
@@ -62,10 +62,10 @@ const solution = (n) => {
         dfs(r + 1);
       }
     }
-  }
+  };
   dfs(0);
   return count;
-};
+}
 ```
 
 ## 배운 점 or 주의할 점
@@ -73,3 +73,16 @@ const solution = (n) => {
 백준에서는 백트래킹을 소개할 때 이 문제를 알려준다  
 근데 소개라는 단어와는 어울리지 않는 난이도  
 예전에는 손도 못댔었는데
+
+`row`에 대한 질문을 조금 더 쉽게 해결하고자 간략한 해설을 작성한다  
+2차원 배열이 아니라 1차원 배열만 사용하여 해결하는 방법을 표현하자면 아래와 같다
+
+1. 1차원 배열 `row`의 각 인덱스는 행을 나타낸다
+2. `row[i]`는 각 행에 존재하는 `Queen`의 열을 나타낸다
+
+따라서 `r`행 `i`열에 `Queen`을 놓을 수 있는 경우(`isSafe`)가 `true`인 경우  
+해당 위치에 `Quuen`을 할당한다
+
+이를 활용하면 대각선에서 공격해오는 퀸에 대하여도 비교적 쉽게 확인할 수 있다  
+행의 인덱스, 해당 인덱스가 가리키는 값이 각각 행, 열을 의미하므로  
+뺄셈의 비교값을 확인한다면 같은 대각선에 있는지 확인할 수 있다
